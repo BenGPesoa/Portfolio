@@ -232,7 +232,6 @@ footer p {
 
 .trabajos {
   max-width: 90vw;
-  border: solid 1px black; 
   margin: 2rem auto;
 }
 
@@ -245,7 +244,10 @@ footer p {
   box-sizing: border-box;
 }
 
-
+.texto {
+  max-width: 90vw;
+  margin: 2rem auto;
+}
 
 
 /* ------ Contacto ------ */
