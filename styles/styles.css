@@ -1,0 +1,339 @@
+/* font-family: 'Catamaran', sans-serif; */
+/* font-family: 'Dancing Script', cursive; */
+
+:root {
+  --col1: #2F4858;
+  --col2: #D1E7E3;
+  --col3: #2F8479;
+  --col4: #485A73;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--col1);
+  background-image: url('../img/tile1.png');
+  background-size: 20%;
+  background-repeat: repeat;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Dancing Script", cursive;
+  color: var(--col2);
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
+  color: var(--col2);
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-family: 'Catamaran', sans-serif;
+  color: var(--col2);
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-family: 'Catamaran', sans-serif;
+  color: var(--col2);
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1.3rem;
+  font-family: 'Catamaran', sans-serif;
+  color: var(--col2);
+  letter-spacing: 1px;
+}
+
+header {
+  height: 4rem;
+  width: 100%;
+  border-bottom: solid 2px var(--col4);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: baseline;
+}
+
+nav {
+  height: 2.5rem;
+  width: 100%;
+}
+
+nav ul {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  text-align: center;
+  flex-grow: 1;
+  height: 100%;
+  margin: 0 5px;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100%;
+  font-family: "Catamaran", sans-serif;
+  color: var(--col2);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  background-color: var(--col4);
+  color: var(--col2);
+  border-radius: 0 0 5px 5px;
+}
+
+.activo {
+  background-color: var(--col4);
+  color: var(--col2);
+  border-radius: 0 0 5px 5px;
+}
+
+.foto {
+    width: 50%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto img{
+    width: 400px;
+    margin: 1rem auto;
+    border: 3px solid var(--col4);
+    border-radius: 10px;
+}
+
+footer {
+  font-size: 1.2rem;
+  width: 100%;
+  height: 3rem;
+  text-align: center;  
+  border-top: solid 2px var(--col4);
+}
+
+footer p {
+    font-family: "Catamaran", sans-serif;
+  color: var(--col2);
+  font-weight: bold;
+    line-height: 3rem;
+}
+
+
+/* ------ Curriculum ------ */
+
+.cv {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.headerCv, .desc, .skills, .educ, .langs {
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-bottom: solid 1px #485A73;
+  padding: 1rem;
+}
+
+.fotoCv {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid var(--col2);
+}
+
+.fotoCv img {
+  width: 200px;
+  border: 3px solid var(--col4);
+  border-radius: 10px;
+}
+
+.datosCv {
+  width: 60%;
+  padding: 1rem;
+}
+
+.skills ul {
+  width: 80%;
+  margin-left: 3rem;
+}
+
+.skills li {
+    font-size: 1.3rem;
+    font-family: 'Catamaran', sans-serif;
+    color: var(--col2);
+    letter-spacing: 1px;
+}
+
+
+.langs ul {
+  width: 80%;
+  margin-left: 3rem;
+}
+
+.langs li {
+    font-size: 1.3rem;
+    font-family: 'Catamaran', sans-serif;
+    color: var(--col2);
+    letter-spacing: 1px;
+}
+
+.cert {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cert img {
+  width: 150px;
+}
+
+.educ ul {
+  width: 80%;
+  margin-left: 3rem;
+}
+
+.educ li {
+    font-size: 1.3rem;
+    font-family: 'Catamaran', sans-serif;
+    color: var(--col2);
+    letter-spacing: 1px;
+}
+
+
+
+
+/* ------ Contacto ------ */
+
+
+.contacto {
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.redes {
+  width: 70%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.redes img {
+  display: block;
+  max-width: 60px;
+}
+
+.form {
+  width: 60%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  font-size: 1.2rem;
+  font-family: 'Catamaran', sans-serif;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  border: solid 2px var(--col4);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+
+.campo_form {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+.msg_ok {
+  display: block;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(59, 85, 22, 0.2);
+  border: solid 0.2rem rgb(59, 85, 22);   
+  color: black;  
+}
+
+.btn_form {
+  display: block;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: var(--col3);
+  border: solid 0.2rem var(--col4);
+}
+
+.btn_master {
+  display: block;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(59, 85, 22, 0.2);
+  border: solid 0.2rem rgb(59, 85, 22);    
+}
+
+.btn_master a {
+  color: black;
+  text-decoration: none;
+}
+
+.mensajes {
+  width: 70%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 1rem;    
+  border: solid 0.1rem #2c3f11;
+  border-radius: 0.5rem;
+  text-align: center;
+}

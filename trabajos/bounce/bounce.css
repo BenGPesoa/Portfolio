@@ -1,0 +1,70 @@
+#but1, #ar1 {
+    display: block;
+}
+
+
+@keyframes bounce {
+    0% {
+        margin-top: 166px;
+        margin-left: 83px;
+    }
+    25% {
+        margin-top: 83px;
+        margin-left: 166px;
+
+    }
+    50% {
+        margin-top: 0px;
+        margin-left: 83px;
+    }
+    75% {
+        margin-top: 83px;
+        margin-left: 0px;
+    } 
+    100% {
+        margin-top: 166px;
+        margin-left: 83px;
+    }   
+}
+
+.but {
+    animation: bounce 2s linear infinite;
+}
+
+#but1 {
+    width: 32px;
+    height: 32px;
+    font: bold 11px verdana ;
+    color: rgba(45,89,56);
+    background-color: rgb(224, 206, 42);
+    border: 1px solid rgb(241, 0, 80);
+    border-radius: 50%;
+    padding: 5px;
+    
+}
+
+#ar1 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(187, 97, 12);
+    border: 3px solid rgb(75, 15, 0);
+    border-radius: 5px;
+    margin-top: 200px;
+    margin-left: 490px;
+    padding: 0px;
+}
+
+body {
+    background: rgb(78,89,56);
+    background: linear-gradient(180deg, rgba(11,10,43,1) 10%, rgba(16,70,83,1) 64%, rgba(50,202,219,1) 93%, rgba(252,255,49,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#footer {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid rgb(55,52,77);
+    margin-top: 110px;
+    }

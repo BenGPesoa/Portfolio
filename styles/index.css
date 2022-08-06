@@ -1,0 +1,83 @@
+/* font-family: 'Catamaran', sans-serif; */
+/* font-family: 'Dancing Script', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    background: rgb(65,15,98);
+    background: linear-gradient(180deg, rgba(65,15,98,1) 0%, rgba(15,98,65,1) 150%);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(192, 146, 227);
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(192, 146, 227);
+}
+.content {
+    width: 80vw;
+    height: 100vh;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.foto img{
+    width: 200px;
+    margin: 1rem auto;
+    border: 3px solid rgb(192, 146, 227);
+    border-radius: 10px;
+}
+
+.nombre {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.botones {
+    width: 240px;
+    height: 110px;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.lang  {
+    width: 100px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.lang a {
+    text-decoration: none;    
+    width: 100%;
+    border: solid 3px rgb(192, 146, 227);
+    border-radius: 5px;
+}
+
+.lang img {
+    width: 100px;
+    display: block;
+    box-sizing: border-box;
+}

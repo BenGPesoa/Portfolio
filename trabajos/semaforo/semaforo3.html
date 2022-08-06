@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaforo V3.0</title>
+    <link rel="icon" type="image/x-icon" href="sem.ico">
+    <link rel="stylesheet" href="semaforo.css">
+</head>
+
+<body>
+    <div class="cubierta">
+        <div id="luzRoja"></div>
+        <div id="luzAmarilla"></div>
+        <div id="luzVerde"></div>
+    </div>
+
+    <div class="botones">
+        <input type="button" onclick="iniciar()" value="Iniciar" class="btnIniciar">
+        <input type="button" onclick="detener()" value="Detener" class="btnDetener">
+    </div>
+    <script>
+
+        var estadoRoja = true;
+        var estadoAmarilla = true;
+        var estadoVerde = true;
+        var frenar = false;
+        
+        function estado0() {
+            estadoRoja = true;
+            estadoAmarilla = true;
+            estadoVerde = true;            
+            cambiaLuces();            
+            console.log('estado 0');
+            return;
+        }
+
+        function iniciar() {
+            frenar = false;
+            estado1();
+        }
+
+        function estado1() {
+            if (frenar) {
+                estado0();
+            } else {
+            estadoRoja = true;
+            estadoAmarilla = false;
+            estadoVerde = false;
+            cambiaLuces();
+            setTimeout(estado2, 5000);
+            console.log('estado 1');
+            }
+        }
+
+        function estado2() {
+            if (frenar) {
+                estado0();
+            } else {
+            estadoRoja = false;
+            estadoAmarilla = true;
+            estadoVerde = false;
+            cambiaLuces();
+            setTimeout(estado3, 1000);
+            console.log('estado 2');
+            }
+        }
+
+        function estado3() {
+            if (frenar) {
+                estado0();
+            } else {
+            estadoRoja = false;
+            estadoAmarilla = false;
+            estadoVerde = true;
+            cambiaLuces();
+            setTimeout(estado4, 5000);
+            console.log('estado 3');
+            }
+        }
+
+        function estado4() {
+            if (frenar) {
+                estado0();
+            } else {
+            estadoRoja = false;
+            estadoAmarilla = true;
+            estadoVerde = true;
+            cambiaLuces();
+            setTimeout(estado1, 1000);
+            console.log('estado 4');
+            }
+        }
+
+
+
+
+        function cambiaLuces() {
+            cambia1();
+            cambia2();
+            cambia3();
+        } 
+
+        function cambia1() {
+            var luz1 = document.getElementById("luzRoja");
+            if (estadoRoja) {
+                luz1.style.backgroundColor = 'red';
+            } else {
+                luz1.style.backgroundColor = 'rgba(0,0,0,0)';
+            }
+        }
+
+        function cambia2() {
+            var luz2 = document.getElementById("luzAmarilla");
+            if (estadoAmarilla) {
+                luz2.style.backgroundColor = 'yellow';
+            } else {
+                luz2.style.backgroundColor = 'rgba(0,0,0,0)';
+            }
+        }
+
+        function cambia3() {
+            var luz3 = document.getElementById("luzVerde");
+            if (estadoVerde) {
+                luz3.style.backgroundColor = 'green';
+            } else {
+                luz3.style.backgroundColor = 'rgba(0,0,0,0)';
+            }
+        }
+
+        function detener() {            
+            console.log('detener');
+            frenar = true;
+        }
+        
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
