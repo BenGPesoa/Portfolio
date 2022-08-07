@@ -244,6 +244,11 @@ footer p {
   box-sizing: border-box;
 }
 
+.trabajo img {
+  border: 2px solid var(--col2);
+  border-radius: 15px;
+}
+
 .texto {
   max-width: 90vw;
   margin: 2rem auto;
