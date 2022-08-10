@@ -36,10 +36,11 @@
             }?>
         <div class="contacto">
             <h3>Contacto</h3> 
-            <p>Puede contactarme por email, Whatsapp y Linkedin, o dejar un mensaje en el siguiente formulario.</p>
+            <p>Puede contactarme por e-mail, Whatsapp, Github y Linkedin, o dejar un mensaje en el siguiente formulario.</p>
             <div class="redes">
             <a target="blank" href="mailto:benpesoa@gmail.com"><img src="img/email.png" alt="Email"></a>
             <a target="blank" href="http://www.linkedin.com/in/ben-pesoa"><img src="img/linkedin.png" alt="Linkedin"></a>
+            <a target="blank" href="https://github.com/BenGPesoa/"><img src="img/github.png" alt="Github"></a>
             <a target="blank" href="https://api.whatsapp.com/send?phone=5491133617246"><img src="img/whatsapp.png" alt="whatsapp"></a>
             </div>
             <div class="form">
